@@ -1,0 +1,3 @@
+/home/michael/文档/C++Projects/RMCV/choose_color/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/michael/文档/C++Projects/RMCV/choose_color/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/michael/文档/C++Projects/RMCV/choose_color/cmake-build-debug/CMakeFiles/choose_color.dir
