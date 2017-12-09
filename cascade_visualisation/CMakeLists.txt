@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(opencv_traincascade)
+project(visualisation)
 
 find_package(OpenCV REQUIRED)
 
@@ -19,6 +19,6 @@ file(GLOB HDRS *.h*)
 
 set(traincascade_files ${SRCS} ${HDRS})
 
-add_executable(opencv_traincascade ${traincascade_files})
+add_executable(visualisation ${traincascade_files})
 
-target_link_libraries(opencv_traincascade ${OpenCV_LIBS})
+target_link_libraries(visualisation ${OpenCV_LIBS})

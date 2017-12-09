@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/michael/文档/C++Projects/RMCV/cascade_visualisation
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named opencv_traincascade
+# Target rules for targets named visualisation
 
 # Build rule for target.
-opencv_traincascade: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 opencv_traincascade
-.PHONY : opencv_traincascade
+visualisation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 visualisation
+.PHONY : visualisation
 
 # fast build rule for target.
-opencv_traincascade/fast:
-	$(MAKE) -f CMakeFiles/opencv_traincascade.dir/build.make CMakeFiles/opencv_traincascade.dir/build
-.PHONY : opencv_traincascade/fast
+visualisation/fast:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/build
+.PHONY : visualisation/fast
 
 opencv_visualisation.o: opencv_visualisation.cpp.o
 
@@ -129,7 +129,7 @@ opencv_visualisation.o: opencv_visualisation.cpp.o
 
 # target to build an object file
 opencv_visualisation.cpp.o:
-	$(MAKE) -f CMakeFiles/opencv_traincascade.dir/build.make CMakeFiles/opencv_traincascade.dir/opencv_visualisation.cpp.o
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/opencv_visualisation.cpp.o
 .PHONY : opencv_visualisation.cpp.o
 
 opencv_visualisation.i: opencv_visualisation.cpp.i
@@ -138,7 +138,7 @@ opencv_visualisation.i: opencv_visualisation.cpp.i
 
 # target to preprocess a source file
 opencv_visualisation.cpp.i:
-	$(MAKE) -f CMakeFiles/opencv_traincascade.dir/build.make CMakeFiles/opencv_traincascade.dir/opencv_visualisation.cpp.i
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/opencv_visualisation.cpp.i
 .PHONY : opencv_visualisation.cpp.i
 
 opencv_visualisation.s: opencv_visualisation.cpp.s
@@ -147,7 +147,7 @@ opencv_visualisation.s: opencv_visualisation.cpp.s
 
 # target to generate assembly for a file
 opencv_visualisation.cpp.s:
-	$(MAKE) -f CMakeFiles/opencv_traincascade.dir/build.make CMakeFiles/opencv_traincascade.dir/opencv_visualisation.cpp.s
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/opencv_visualisation.cpp.s
 .PHONY : opencv_visualisation.cpp.s
 
 # Help Target
@@ -156,9 +156,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... opencv_traincascade"
+	@echo "... edit_cache"
+	@echo "... visualisation"
 	@echo "... opencv_visualisation.o"
 	@echo "... opencv_visualisation.i"
 	@echo "... opencv_visualisation.s"

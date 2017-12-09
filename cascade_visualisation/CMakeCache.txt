@@ -114,7 +114,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=opencv_traincascade
+CMAKE_PROJECT_NAME:STATIC=visualisation
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -288,6 +288,12 @@ opencv_traincascade_BINARY_DIR:STATIC=/home/michael/文档/C++Projects/RMCV/casc
 
 //Value Computed by CMake
 opencv_traincascade_SOURCE_DIR:STATIC=/home/michael/文档/C++Projects/RMCV/cascade_visualisation
+
+//Value Computed by CMake
+visualisation_BINARY_DIR:STATIC=/home/michael/文档/C++Projects/RMCV/cascade_visualisation
+
+//Value Computed by CMake
+visualisation_SOURCE_DIR:STATIC=/home/michael/文档/C++Projects/RMCV/cascade_visualisation
 
 
 ########################

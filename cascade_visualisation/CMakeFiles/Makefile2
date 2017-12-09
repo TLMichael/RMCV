@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /home/michael/文档/C++Projects/RMCV/cascade_visualisation
 CMAKE_BINARY_DIR = /home/michael/文档/C++Projects/RMCV/cascade_visualisation
 
 #=============================================================================
-# Target rules for target CMakeFiles/opencv_traincascade.dir
+# Target rules for target CMakeFiles/visualisation.dir
 
 # All Build rule for target.
-CMakeFiles/opencv_traincascade.dir/all:
-	$(MAKE) -f CMakeFiles/opencv_traincascade.dir/build.make CMakeFiles/opencv_traincascade.dir/depend
-	$(MAKE) -f CMakeFiles/opencv_traincascade.dir/build.make CMakeFiles/opencv_traincascade.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/michael/文档/C++Projects/RMCV/cascade_visualisation/CMakeFiles --progress-num=1,2 "Built target opencv_traincascade"
-.PHONY : CMakeFiles/opencv_traincascade.dir/all
+CMakeFiles/visualisation.dir/all:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/depend
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/michael/文档/C++Projects/RMCV/cascade_visualisation/CMakeFiles --progress-num=1,2 "Built target visualisation"
+.PHONY : CMakeFiles/visualisation.dir/all
 
 # Include target in all.
-all: CMakeFiles/opencv_traincascade.dir/all
+all: CMakeFiles/visualisation.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/opencv_traincascade.dir/rule: cmake_check_build_system
+CMakeFiles/visualisation.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/michael/文档/C++Projects/RMCV/cascade_visualisation/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/opencv_traincascade.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/visualisation.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/michael/文档/C++Projects/RMCV/cascade_visualisation/CMakeFiles 0
-.PHONY : CMakeFiles/opencv_traincascade.dir/rule
+.PHONY : CMakeFiles/visualisation.dir/rule
 
 # Convenience name for target.
-opencv_traincascade: CMakeFiles/opencv_traincascade.dir/rule
+visualisation: CMakeFiles/visualisation.dir/rule
 
-.PHONY : opencv_traincascade
-
-# clean rule for target.
-CMakeFiles/opencv_traincascade.dir/clean:
-	$(MAKE) -f CMakeFiles/opencv_traincascade.dir/build.make CMakeFiles/opencv_traincascade.dir/clean
-.PHONY : CMakeFiles/opencv_traincascade.dir/clean
+.PHONY : visualisation
 
 # clean rule for target.
-clean: CMakeFiles/opencv_traincascade.dir/clean
+CMakeFiles/visualisation.dir/clean:
+	$(MAKE) -f CMakeFiles/visualisation.dir/build.make CMakeFiles/visualisation.dir/clean
+.PHONY : CMakeFiles/visualisation.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/visualisation.dir/clean
 
 .PHONY : clean
 
