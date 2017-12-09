@@ -1,0 +1,3 @@
+/home/michael/文档/C++Projects/RMCV/board_detect/CMakeFiles/edit_cache.dir
+/home/michael/文档/C++Projects/RMCV/board_detect/CMakeFiles/rebuild_cache.dir
+/home/michael/文档/C++Projects/RMCV/board_detect/CMakeFiles/boarddetect.dir
