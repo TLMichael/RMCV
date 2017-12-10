@@ -15,12 +15,15 @@ int main()
 	vector<Mat> hsvSplit;
 	Mat imgThresholded;
 
-	VideoCapture cap(0);
-	if (!cap.isOpened())
-	{
-		cout << "Cannot open the web cam\n";
-		return -1;
-	}
+	
+	//VideoCapture cap(0);
+	//if (!cap.isOpened())
+	//{
+	//	cout << "Cannot open the web cam\n";
+	//	return -1;
+	//}
+
+
 	namedWindow("Control", CV_WINDOW_AUTOSIZE);
 	int iLowH = 100,			//H∈ [0, 180）， S ∈ [0, 255]， V ∈ [0, 255]
 		iHighH = 140, 
@@ -46,7 +49,8 @@ int main()
 
 	while (true)
 	{
-		cap >> imgOriginal;
+		//cap >> imgOriginal;
+		imgOriginal = imread("0031.jpg");
 		if (imgOriginal.empty())
 		{
 			cout << "Cannot read a frame from video stream" << endl;
@@ -61,10 +65,10 @@ int main()
 
 		inRange(imgHSV, Scalar(iLowH, iLowS, iLowV), Scalar(iHighH, iHighS, iHighV), imgThresholded);
 		//开操作 (去除一些噪点)
-		Mat element = getStructuringElement(MORPH_RECT, Size(5, 5));
-		morphologyEx(imgThresholded, imgThresholded, MORPH_OPEN, element);
+		//Mat element = getStructuringElement(MORPH_RECT, Size(5, 5));
+		//morphologyEx(imgThresholded, imgThresholded, MORPH_OPEN, element);
 		//闭操作 (连接一些连通域)
-		morphologyEx(imgThresholded, imgThresholded, MORPH_CLOSE, element);
+		//morphologyEx(imgThresholded, imgThresholded, MORPH_CLOSE, element);
 		t = (double)getTickCount() - t;
 		fps = getTickFrequency() / t;
 
@@ -74,7 +78,7 @@ int main()
 			<< (int)imgHSV.at<Vec3b>(point)[1] << " "
 			<< (int)imgHSV.at<Vec3b>(point)[2];
 
-		cout << point.x << " " << point.y << endl;
+		//cout << point.x << " " << point.y << endl;
 
 		string fps_ = buf.str();
 		putText(imgOriginal, fps_, Point(20, 40), FONT_HERSHEY_SIMPLEX, 1, Scalar(0, 0, 255), 3);//显示帧率
