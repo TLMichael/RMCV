@@ -19,10 +19,10 @@ public:
     Serial(char *dev);
     ~Serial();
     void delay(int sec);
-    bool setPara(int speed = 96002, int databits = 8, int stopbits = 1, int parity = 'N');
+    bool setPara(int speed = 9600, int databits = 8, int stopbits = 1, int parity = 'N');
     bool setBaudRate(int speed);
     int writeData(const char *data, int datalength);
-    int readData(char *data, int datalength = 1024);
+    int readData(char *data, int datalength = 64);
 
 private:
     int fd;

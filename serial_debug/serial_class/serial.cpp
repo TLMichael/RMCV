@@ -193,8 +193,7 @@ int Serial::writeData(const char *data, int datalength)
 int Serial::readData(char *data, int datalength)
 {
     int nread;
-    nread = read(fd, data, datalength);
-    data[nread] = '/0';
+    nread = read(fd, data, 5);
+    data[nread] = '\0';
     return nread;
 }
-
