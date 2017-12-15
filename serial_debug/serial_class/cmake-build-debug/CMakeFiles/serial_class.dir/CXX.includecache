@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/michael/文档/C++Projects/RMCV/serial_debug/serial_class/main.cpp
+iostream
+-
+serial.h
+/home/michael/文档/C++Projects/RMCV/serial_debug/serial_class/serial.h
+
+/home/michael/文档/C++Projects/RMCV/serial_debug/serial_class/serial.cpp
+serial.h
+/home/michael/文档/C++Projects/RMCV/serial_debug/serial_class/serial.h
+
+/home/michael/文档/C++Projects/RMCV/serial_debug/serial_class/serial.h
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+sys/types.h
+-
+sys/signal.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+termios.h
+-
+errno.h
+-
+limits.h
+-
+string
+-
+

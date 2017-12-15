@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/serial_class.dir/main.cpp.o CMakeFiles/serial_class.dir/serial.cpp.o  -o serial_class 
