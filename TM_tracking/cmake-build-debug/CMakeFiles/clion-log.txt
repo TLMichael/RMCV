@@ -1,0 +1,15 @@
+/usr/local/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/michael/文档/C++Projects/RMCV/TM_tracking
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found CUDA: /usr/local/cuda (found suitable exact version "8.0") 
+-- Found OpenCV: /usr/local (found version "3.3.1") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/michael/文档/C++Projects/RMCV/TM_tracking/cmake-build-debug

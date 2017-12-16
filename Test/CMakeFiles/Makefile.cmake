@@ -125,5 +125,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/opencv_traincascade.dir/DependInfo.cmake"
+  "CMakeFiles/minarea.dir/DependInfo.cmake"
   )

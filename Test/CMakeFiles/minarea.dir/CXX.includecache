@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/michael/文档/C++Projects/RMCV/Test/example.cpp
-opencv2/opencv.hpp
--
+/home/michael/文档/C++Projects/RMCV/Test/minarea.cpp
+opencv2/highgui.hpp
+/home/michael/文档/C++Projects/RMCV/Test/opencv2/highgui.hpp
+opencv2/imgproc.hpp
+/home/michael/文档/C++Projects/RMCV/Test/opencv2/imgproc.hpp
 iostream
 -
 
